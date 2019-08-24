@@ -52,7 +52,7 @@ def calculate_move(board_matrix, game_state):
     if(len(game_state['you']["body"]) < largest_snek) :
         HEALTHLIM = 100
     else:
-        HEALTHLIM = 27
+        HEALTHLIM = 28
 
     if health < HEALTHLIM and len(game_state['board']['food'])>0:
         find_food(game_state, board_matrix)
