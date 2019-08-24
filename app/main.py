@@ -64,7 +64,7 @@ def move():
         if data.get('you') == snake.get('id')
             snake_coords = snake.get('coords')
     snake_head = snake_coords[0]
-    baord_width = data.get('width")
+    baord_width = data.get('width')
     board_height = data.get('height')
     
     sorted_list = get_food_list(snake_head, data)
