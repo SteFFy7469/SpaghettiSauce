@@ -108,10 +108,10 @@ def check_move(x, y, best_move, board_matrix, height) :
         y = y-1
     if(best_move == 'down') :
         y = y+1
+    
 
-
-    # Check up
-    if y - 1 > 0 and board_matrix[y-1][x] == OCCUPIED :
+    # Check up  added and y<0
+    if y - 1 > 0 and board_matrix[y-1][x] == OCCUPIED and y < 0 :
         sum_move = sum_move + 1
 
 
@@ -121,7 +121,7 @@ def check_move(x, y, best_move, board_matrix, height) :
 
 
     # Check Left
-    if x - 1 > 0 and board_matrix[y][x-1] == OCCUPIED :
+    if x - 1 > 0 and board_matrix[y][x-1] == OCCUPIED and x < 0:
         sum_move = sum_move + 1
 
 
