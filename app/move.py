@@ -50,7 +50,7 @@ def calculate_move(board_matrix, game_state):
             largest_snek = len(snake_body)
 
     if(len(game_state['you']["body"]) < largest_snek) :
-        HEALTHLIM = 90 """ was 100"""
+        HEALTHLIM = 100 """ was 100"""
     else:
         HEALTHLIM = 25
 
