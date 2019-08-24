@@ -12,7 +12,7 @@ HUNT      = 1
 
 
 TAIL       = 4
-HEALTHLIM = 45
+HEALTHLIM = 100
 game_state = ""
 directions = {'up': 0, 'down': 0, 'left': 0, 'right': 0}
 
@@ -50,7 +50,7 @@ def calculate_move(board_matrix, game_state):
             largest_snek = len(snake_body)
 
     if(len(game_state['you']["body"]) < largest_snek) :
-        HEALTHLIM = 100 """ was 100"""
+        HEALTHLIM = 100
     else:
         HEALTHLIM = 25
 
